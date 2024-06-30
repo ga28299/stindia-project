@@ -3,6 +3,8 @@ from utils.db import *
 import os
 
 
+print("Current Working Directory:", os.getcwd())
+
 if 'pitch_data' not in st.session_state:
     pitch_data, deal_data, shark_data, industry_data,location_data = load_from_db()
     st.session_state.pitch_data = pitch_data
