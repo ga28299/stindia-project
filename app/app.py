@@ -21,7 +21,7 @@ else:
 st.set_page_config(page_title="Streamlit India", 
                    page_icon="🦈", layout="wide")
 
-st.image("assets/sti-image.jpg", use_column_width=True)
+#st.image("assets/sti-image.jpg", use_column_width=True)
 st.title("Welcome to Shark Tank India Insights")
 
 
