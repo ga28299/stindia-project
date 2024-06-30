@@ -1,6 +1,6 @@
 streamlit
 pandas
-psycopg[binary]
+psycopg-binary
 sqlalchemy
 folium
 streamlit-folium
