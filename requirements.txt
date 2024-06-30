@@ -1,0 +1,6 @@
+streamlit
+pandas
+psychopg
+sqlalchemy
+folium
+streamlit-folium
