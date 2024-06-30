@@ -1,5 +1,6 @@
 import streamlit as st
 from utils.db import *
+import os
 
 
 if 'pitch_data' not in st.session_state:
@@ -16,12 +17,12 @@ else:
     industry_data = st.session_state.industry_data
     location_data = st.session_state.location_data
 
-
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
 st.set_page_config(page_title="Streamlit India", 
                    page_icon="🦈", layout="wide")
 
-#st.image("assets/sti-image.jpg", use_column_width=True)
+st.image(os.path.join(current_dir,'assets','sti-image.jpg'), use_column_width=True)
 st.title("Welcome to Shark Tank India Insights")
 
 
