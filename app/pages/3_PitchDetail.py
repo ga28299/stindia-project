@@ -28,6 +28,7 @@ def state_map(df,year,industry_filter):
     m = folium.Map(location=[22,84], zoom_start=4,tiles='CartoDB positron')
 
     geojson=os.path.join(current_dir,'..','data','india_geo.geojson')
+    print(geojson)
     with open(geojson, encoding='utf-8') as f:
         india_states = json.load(f)
 
