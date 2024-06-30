@@ -6,7 +6,7 @@ import json
 import os 
 
 
-curr_path=os.path.dirname(os.path.abspath(__file__))
+current_dir=os.path.dirname(os.path.abspath(__file__))
 
 def normalize_name(name):
     name = unidecode(name) 
@@ -27,7 +27,7 @@ def state_map(df,year,industry_filter):
 
     m = folium.Map(location=[22,84], zoom_start=4,tiles='CartoDB positron')
 
-    geojson=os.path.join(curr_path,'../data/india_geo.geojson')
+    geojson=os.path.join(current_dir,'..','data','india_geo.geojson')
     with open(geojson, encoding='utf-8') as f:
         india_states = json.load(f)
 
